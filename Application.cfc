@@ -1,5 +1,8 @@
 <cfcomponent extends="MillionMunkeys.TrafficMunkey_1_4.Application">
 	<cfset this.name="PetStore" />
+	<cfset this.SessionManagement=true />
+	<cfset this.loginStorage="Session" />
+	
 	<cffunction name="onRequest">
 		<cfset Super.onRequest(ArgumentCollection=Arguments) />
 		<cfimport prefix="" taglib="/Millionmunkeys/TrafficMunkey_1_4/" />
